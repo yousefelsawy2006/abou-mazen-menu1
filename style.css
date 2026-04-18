@@ -286,3 +286,26 @@ nav a.switch-link {
         transform: translateY(-2px);
     }
 }
+/* الكود ده بيمنع الشاشة إنها تتحرك يمين وشمال نهائياً */
+html, body {
+    overflow-x: hidden;
+}
+
+/* حل مشكلة الفراغات الجانبية في المواقع العربية */
+body {
+    overflow-x: hidden !important;
+}
+
+footer {
+    width: 100vw !important;
+    margin-right: calc(50% - 50vw) !important;
+    margin-left: calc(50% - 50vw) !important;
+    box-sizing: border-box !important;
+    padding: 40px 20px;
+    
+    /* تظبيط الكلام جوه الفوتر عشان يفضل في النص */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
